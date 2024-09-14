@@ -1,50 +1,74 @@
-# React + TypeScript + Vite
+GrowMeOrganic Private Limited - React Task with Vite + Prime React
+This project is a task assigned by GrowMeOrganic Private Limited, aimed at creating a React application with Vite and TypeScript that utilizes PrimeReact's DataTable component. The app demonstrates server-side pagination, row selection, and custom row selection persistence.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Overview
+This project is built with the following key requirements:
 
-Currently, two official plugins are available:
+The React app is bootstrapped using Vite.
+It uses TypeScript as the primary language.
+The PrimeReact DataTable is used to display paginated data.
+Implements server-side pagination, fetching data for each page dynamically.
+Allows for row selection and deselection with checkboxes.
+Custom row selection panel: selections persist across page changes (even if the user revisits the same page).
+Additional Considerations:
+To avoid memory issues, the application does not store all rows fetched across multiple pages.
+Every page change triggers an API call to retrieve that page's data, as described in the provided video.
+Demo
+The application is deployed via Vercel. You can view the live version here (https://tesked-from-grow-me-organic-private-limited.vercel.app).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+PrimeReact DataTable with Pagination: Fetches the first page of data on the initial load and displays it in a table.
+Server-Side Pagination: Data is fetched dynamically from the server on page change.
+Row Selection: Users can select individual rows or all rows at once using checkboxes.
+Custom Row Selection Persistence: Row selections (and deselections) persist across different pages. For example, if rows on page 2 are selected, the selection remains intact when returning to page 2 from another page.
+Installation and Setup
+To get started with the project, clone the repository and install the dependencies.
 
-## Expanding the ESLint configuration
+Prerequisites
+Ensure you have the following installed on your local machine:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Node.js (v14 or higher)
+npm or yarn
+Vite (comes installed with the project)
+Clone the Repository
+bash
+Copy code
+git clone https://github.com/your-username/growmeorganic-react-task.git
+cd grown organic-react-task
+Install Dependencies
+bash
+Copy code
+npm install
+Or if you're using yarn:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+yarn install
+Run the Application
+To run the app locally:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+npm run dev
+Or using yarn:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+yarn dev
+Build for Production
+To build the app for production:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+npm run build
+Or using yarn:
+
+npm run Build
+yarn build
+
+Deployment
+This project is deployed on Vercel. To deploy the app to Vercel, you can follow these steps:
+
+Push your code to a Git repository.
+Go to Vercel and sign in with your Git provider (GitHub, GitLab, or Bitbucket).
+Once logged in, click "New Project" and import your repository.
+After importing, Vercel will automatically build and deploy your project.
+PrimeReact DataTable Usage
+The application utilizes the PrimeReact DataTable component to display tabular data with the following key features:
+
+Pagination: Server-side pagination ensures efficient data fetching.
+Row Selection: Allows users to select or deselect rows using checkboxes.
+Custom Row Selection Persistence: Row selections remain intact across different page changes, even when revisiting pages.
