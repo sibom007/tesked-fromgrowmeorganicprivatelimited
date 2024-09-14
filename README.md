@@ -1,7 +1,7 @@
-GrowMeOrganic Private Limited - React Task with Vite + Prime React
+## GrowMeOrganic Private Limited - React Task with Vite + Prime React
 This project is a task assigned by GrowMeOrganic Private Limited, aimed at creating a React application with Vite and TypeScript that utilizes PrimeReact's DataTable component. The app demonstrates server-side pagination, row selection, and custom row selection persistence.
 
-Project Overview
+## Project Overview
 This project is built with the following key requirements:
 
 The React app is bootstrapped using Vite.
@@ -16,7 +16,7 @@ Every page change triggers an API call to retrieve that page's data, as describe
 Demo
 The application is deployed via Vercel. You can view the live version here (https://tesked-from-grow-me-organic-private-limited.vercel.app).
 
-Features
+## Features
 PrimeReact DataTable with Pagination: Fetches the first page of data on the initial load and displays it in a table.
 Server-Side Pagination: Data is fetched dynamically from the server on page change.
 Row Selection: Users can select individual rows or all rows at once using checkboxes.
@@ -24,7 +24,7 @@ Custom Row Selection Persistence: Row selections (and deselections) persist acro
 Installation and Setup
 To get started with the project, clone the repository and install the dependencies.
 
-Prerequisites
+## Prerequisites
 Ensure you have the following installed on your local machine:
 
 Node.js (v14 or higher)
@@ -59,7 +59,7 @@ Or using yarn:
 npm run Build
 yarn build
 
-Deployment
+## Deployment
 This project is deployed on Vercel. To deploy the app to Vercel, you can follow these steps:
 
 Push your code to a Git repository.
