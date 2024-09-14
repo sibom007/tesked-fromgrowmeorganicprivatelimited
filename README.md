@@ -29,29 +29,24 @@ Ensure you have the following installed on your local machine:
 
 Node.js (v14 or higher)
 npm or yarn
-Vite (comes installed with the project)
-Clone the Repository
+
 bash
 Copy code
 git clone https://github.com/your-username/growmeorganic-react-task.git
 cd grown organic-react-task
-Install Dependencies
-bash
-Copy code
+
+## Install Dependencies
+
 npm install
 Or if you're using yarn:
 
-
 yarn install
-Run the Application
-To run the app locally:
 
 npm run dev
 Or using yarn:
 
 yarn dev
 Build for Production
-To build the app for production:
 
 npm run build
 Or using yarn:
